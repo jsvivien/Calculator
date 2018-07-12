@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray">
+        <TextView
+            android:id="@+id/text_num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_30" />
+        <TextView
+            android:id="@+id/text_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_num1"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_30" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/text_sign"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_del"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_click"
+                android:text="@string/del" />
+            <TextView
+                android:id="@+id/text_num2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_45" />
+        </LinearLayout>
+    </RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:columnCount="4"
+        android:rowCount="5">
+        <Button
+            android:id="@+id/button_ac"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/clear"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_opposite"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/opposite"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_integerpart"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/interger_part"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_div"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click"
+            android:text="@string/div"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_7"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_7"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_8"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_8"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_9"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_9"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_mul"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click"
+            android:text="@string/mul"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_4"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_5"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_5"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_6"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_6"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_sub"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click"
+            android:text="@string/sub"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_1"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_2"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_3"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_3"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_add"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click"
+            android:text="@string/add"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_0"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/number_0"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_dot"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click_number"
+            android:text="@string/dot"
+            android:textSize="@dimen/sp_40" />
+        <Button
+            android:id="@+id/button_result"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/btn_click"
+            android:text="@string/result"
+            android:textSize="@dimen/sp_40" />
+    </GridLayout>
+</LinearLayout>
